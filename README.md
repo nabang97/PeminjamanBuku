@@ -1,7 +1,7 @@
 # PeminjamanBuku
 
 ## User Service End Point 
-/authenticationcheck
+/api/registration
 ```
 {
     "identityNumber" : (string),
@@ -20,5 +20,38 @@
     "cityHome": (string),
     "email":(string),
     "villageHome": (string)
+}
+```
+
+/signin
+```
+{
+    "username": (string),
+    "password" : (string)
+}
+```
+
+## Borrow Service End Point 
+/book/add
+```
+{ 
+ "title" : (string)
+ "code" :(string)
+ "writer" :(int)
+ "publisher" : (int)
+ "publishCity" :  (string)
+ "pagesNumber": (int)
+ "stock" : (int) 
+ "bookType" : (int)
+ "bookshelf : (int)
+ "publishYear : (int)
+ "publishMonth  : (int)
+```
+
+/api/borrownow
+```
+{
+    "member" : (string),
+    "books" : (string[])
 }
 ```
